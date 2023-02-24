@@ -1,0 +1,10 @@
+{
+    "connectionURL": "https://goerli.infura.io/v3/6dab407582414625bc25b19122311c8b",
+    "privateKey": [
+      "",
+      ""
+    ],
+    "toAddress": "0x8a91caBe851419fE93a7Bd067581A74Ba2465d73",
+    "amount": 1000000,
+    "threshold": 1
+  }
