@@ -1,8 +1,9 @@
 # Safe Module implementation
 
 This project is a Safe Module implementation for a Safe contract to withdraw a predetermined amount of Unicorn token.
+
 Key features include:
-- Module is specific to a token address and to a Safe
+- Module is specific to a token address(Unicorn) and to a Safe
 - The module do not work for multiple token address or multiple safe addresses
 - Signatures expire after a set time
 - The module require the signatures of multiple owners (to meet the threshold requirement of the attached Safe)
@@ -13,9 +14,10 @@ Key features include:
 
 ## Process
 The whole process of Safe Module includes these steps
-```shell
+```
 Prerequisites, the Safe Contract and Unicorn should already be deployed and setup should be complete. Transfer Unicorn tokens to Safe
 ```
+
 ***
 - Run ```npm i```
 - Deploy UnicornSafeModule.sol (our safe module) with Safe & Unicorn contract addresses as constructor parameter. And enable this module on Safe
