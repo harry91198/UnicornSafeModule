@@ -36,6 +36,7 @@ npx hardhat test
 ```
 Run the following, to test the smart contract functionality. This will test `UnicornSafeModule`
 This includes deploying of `GnosisSafe`, `GnosisSafeProxyFactory`, `Unicorn-TestToken`, `SafeProxyContract` and deploying `UnicornSafeModule`. Enabling the module in Safe and run basic tests and testing functionalities of `UnicornSafeModule`.
+The `hardhat.config.js` is kept minimal, and only includes necessary fields like solidity compiler versions; More networks and fields can be added as per requirement in future.
 # Sample Hardhat Project
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
