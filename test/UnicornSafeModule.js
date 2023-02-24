@@ -6,6 +6,7 @@ const {
 
 const { expect } = require("chai");
 const { ethers, web3, config } = require("hardhat");
+const { getSignature } = require("../scripts/getSignature");
 
 const ADDRESS_0 = "0x0000000000000000000000000000000000000000"
 const GnosisSafe = artifacts.require("@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol:GnosisSafe")
@@ -14,7 +15,6 @@ const ProxyFactory = artifacts.require("@gnosis.pm/safe-contracts/contracts/prox
 const TestToken = artifacts.require("./TestToken.sol")
 
 const safeDetails = require('@gnosis.pm/safe-contracts/build/artifacts/contracts/GnosisSafe.sol/GnosisSafe.json');
-const { getSignature } = require("../scripts/getSignature");
 const GnosisSafeProxy = new web3.eth.Contract(safeDetails.abi)
 GnosisSafeProxy.options.data = safeDetails.bytecode;
 
